@@ -1,0 +1,73 @@
+/* CSS Document */
+/* Sets the background of the page to a dark blue. */
+body {
+	background-color: #127496;
+}
+/* Decreases the spacing (line height) between the h3 tags */
+h3 {
+	line-height: 0px;
+}
+/* This is the lighter blue bubble that actually contains the game. The height, margins, and padding are set here. */
+.container {
+	height: 710px;
+	margin: 35px 20px;
+	padding: 5px;
+	text-align: center;
+	background-color: deepskyblue;
+	border-radius: 500px; /* Makes the box have rounded corners. */
+}
+/* Styles the heading text at the top of the page (Centered, font, color, boldness). */
+.header {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 36px;
+	color: white;
+	font-weight: 100;
+}
+/* Styles the "VS" that is located between the user choice and the computer choice. */
+.vs {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 36px;
+	color: white;
+	font-weight: 100;
+	position: relative; /* Lines 33-34 move up the "VS" text so it is higher up on the page. */
+	top: -110px;
+}
+/* Styles the text that says whether the user won, lost, or, tied (Centered, font, color, boldness, line-height). */
+.result {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 36px;
+	color: white;
+	font-weight: 100;
+	line-height: 0px;
+}
+/* Gives visual feedback to the user when the options are hovered over by moving the image slightly upward. */
+.images:hover{ 
+	position: relative;
+   	top: -5px;
+} 
+/* Styles the grey progress bar. */
+.bar {
+	width: 750px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: grey;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 16px;
+	color: white;
+	line-height: 26px;
+}
+/* Styles the green part of the progress bar that represents the user's streak. */
+.progress {
+	width: 0px;
+	height: 30px;
+	background-color: green;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 16px;
+	color: white;
+	line-height: 26px;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RPS</title>
+	<script src="../_JS/rps.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../_CSS/rps.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<!-- This my not be the best way to run a JavaScript function right away, I'm not sure, but it worked for me so that's what I did. -->
+<body onLoad="loadStreak()">
+	<div class="container">
+		<div class="header">
+			<h3 style="text-decoration: underline">Rock, Paper, Scissors, Lizard, Spock</h3>
+			<h5>Can you beat the world champion player 5 times in a row?</h5>
+		</div>
+		<!-- These are the buttons that you can click on to make your choice. On click, they run two seperate functions. -->
+		<img class="images" src="../_images/newrock4.png" onClick="chooseRock(); progressBar();">
+		<img class="images" src="../_images/newpaper3.png" onClick="choosePaper(); progressBar();">
+		<img class="images" src="../_images/newscissors3.png" onClick="chooseScissors(); progressBar();">
+		<img class="images" src="../_images/newlizard3.png" onClick="chooseLizard(); progressBar();">
+		<img class="images" src="../_images/newspock3.png" onClick="chooseSpock(); progressBar();">
+		<p id="result" class="result">Will you win? Let's find out!</p>
+		<!-- This is the progress bar, that changes every time the user increases their winstreak. -->
+		<div class="bar" id="bar">
+			<div class="progress" id="progress"></div>
+		</div>
+		<br>
+		<!-- This is the 'game board' that shows the result of the match. -->
+		<span id="playerPicks"></span>
+		<span class="vs" id="showResult"></span>
+		<span id="computerPicks"></span>
+	</div>
+</body>
+</html>
